@@ -15,8 +15,8 @@ int instruct(char *line, stack_t **stack, unsigned int num, FILE *f)
 	instruction_t set[] = {{"push", push}, {"pall", pal}, {"pint", peek},
 		{"pop", pop},
 		{"swap", swap2elements},
-		{"add", add2node},/*
-		{"nop", nopnode}, {"sub", subnode},
+		{"add", add2node},
+		{"nop", nopnode},/* {"sub", subnode},
 		{"div", div2node},
 		{"mul", mul},
 		{"mod", mod},*/
