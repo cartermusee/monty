@@ -9,9 +9,9 @@ void swap2elements(stack_t **head, unsigned int num)
 {
 	stack_t *temp;
 	
-	temp = *head;
-	int tmp, i = 0;
+	int t, i = 0;
 
+	temp = *head;
 	while (temp)
 	{
 		temp = temp->next;
@@ -25,7 +25,7 @@ void swap2elements(stack_t **head, unsigned int num)
 		freem(*head);
 		exit(EXIT_FAILURE);
 	}
-	tmp = temp->n;
+	t = temp->n;
 	temp->n = temp->next->n;
-	temp->next->n = tmp;
+	temp->next->n = t;
 }
