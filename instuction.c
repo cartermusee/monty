@@ -18,8 +18,8 @@ int instruct(char *line, stack_t **stack, unsigned int num, FILE *f)
 		{"add", add2node},
 		{"nop", nopnode}, {"sub", subnode},
 		{"div", div2node},
-		{"mul", mul},/*
-		{"mod", mod},*/
+		{"mul", mul},
+		{"mod", mod},
 		{NULL, NULL}
 	};
 	token = strtok(line, " \n\t");
