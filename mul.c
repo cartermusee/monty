@@ -1,4 +1,4 @@
-#include "mont.h"
+#include "monty.h"
 /**
  * mul - function to multiply
  * @head:head of stack
