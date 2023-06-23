@@ -25,6 +25,7 @@ void swap2elements(stack_t **head, unsigned int num)
 		freem(*head);
 		exit(EXIT_FAILURE);
 	}
+	temp = *head;
 	t = temp->n;
 	temp->n = temp->next->n;
 	temp->next->n = t;
