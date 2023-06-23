@@ -25,6 +25,7 @@ void add2node(stack_t **head, unsigned int num)
 		freem(*head);
 		exit(EXIT_FAILURE);
 	}
+	temp = *head;
 	sum = temp->n + temp->next->n;
 	temp->next->n = sum;
 	*head = temp->next;

@@ -24,6 +24,7 @@ void mul(stack_t **head, unsigned int num)
 		freem(*head);
 		exit(EXIT_FAILURE);
 	}
+	temp = *head;
 	mul = temp->next->n * temp->n;
 	temp->next->n = mul;
 	*head = temp->next;

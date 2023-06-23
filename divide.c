@@ -32,6 +32,7 @@ void div2node(stack_t **head, unsigned int num)
 		freem(*head);
 		exit(EXIT_FAILURE);
 	}
+	temp = *head;
 	div = temp->next->n / temp->n;
 	temp->next->n = div;
 	*head = temp->next;

@@ -24,6 +24,7 @@ void subnode(stack_t **head, unsigned int num)
 		freem(*head);
 		exit(EXIT_FAILURE);
 	}
+	temp = *head;
 	sub = temp->next->n - temp->n;
 	temp->next->n = sub;
 	*head = temp->next;
