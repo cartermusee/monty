@@ -8,7 +8,7 @@
 void swap2elements(stack_t **head, unsigned int num)
 {
 	stack_t *temp;
-	
+
 	int t, i = 0;
 
 	temp = *head;

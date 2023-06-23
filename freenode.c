@@ -12,8 +12,8 @@ void freem(stack_t *head)
 	current = head;
 	while (current != NULL)
 	{
-		tem = current;
-		current = current->next;
-		free(tem);
+		tem = current->next;
+		free(current);
+		current = tem;
 	}
 }

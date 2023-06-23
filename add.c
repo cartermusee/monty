@@ -10,7 +10,7 @@ void add2node(stack_t **head, unsigned int num)
 {
 	stack_t *temp;
 	int sum, i = 0;
-	
+
 	temp = *head;
 	while (temp)
 	{
